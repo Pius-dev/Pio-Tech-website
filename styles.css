@@ -1,0 +1,269 @@
+@charset "utf-8";
+@media(max-width:1150px) {
+    .content {
+        width: 100%;
+    }
+    .model {
+        width: auto;
+        height: 400px;
+    }
+}
+
+@media (max-width:1000px) {
+    nav {
+        height: 70px;
+        padding: 0px 25px;
+        justify-content: space-between;
+    }
+    .logo img {
+        height: 40px;
+    }
+    nav .menu-icon {
+        float: right;
+        user-select: none;
+        position: relative;
+        padding: 20px 20px;
+        cursor: pointer;
+    }
+    nav .menu-icon .nav-icon:after,
+    nav .menu-icon .nav-icon::before {
+        display: block;
+        position: absolute;
+        height: 100px;
+        content: '';
+        background: #011b1b;
+    }
+    nav .menu-icon .nav-icon {
+        display: block;
+        height: 4px;
+        transition: background 0.3s ease-out;
+        position: relative;
+        background-color: #583030;
+    }
+    .menu {
+        display: none;
+    }
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Palatino;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400px;
+    display: flex;
+    line-height: 30px;
+    height: 20px;
+    margin: 25px;
+    padding: 0px 30px;
+    letter-spacing: 1px;
+    color: darkmagenta;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Hi {
+    font-weight: 400;
+    border-bottom: 3px solid #011b1b;
+}
+
+.sk span {
+    color: brown;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-input {
+    widows: 400px;
+    height: auto;
+    background-color: white;
+    border-radius: 50px;
+    justify-content: center;
+    display: flex;
+    box-shadow: 3px 3px 3px red;
+}
+
+.contact-input input {
+    widows: 100px;
+    outline: none;
+    border: none;
+    background: transparent;
+    color: rgb(236, 9, 134);
+    text-align: center;
+}
+
+.contact-input a {
+    widows: 200px;
+    align-items: center;
+    border-radius: 15px;
+    display: flex;
+    margin: auto;
+    font-weight: 600;
+    justify-content: center;
+    color: white;
+    background-color: rgb(23, 153, 228);
+    display: flex;
+    font-size: 1rem;
+    height: 20px;
+}
+
+#projects {
+    display: flex;
+    margin: 30px opx;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.project-btn {
+    width: 200px;
+    margin-top: -25px;
+    height: 49px;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #1db096;
+    border-radius: 15px;
+    box-shadow: 4px 14px 37px red;
+}
+
+.project-btn:hover,
+.contact-input a:hover {
+    background-color: rgb(238, 54, 54);
+    transition: all ease 0.3s;
+}
+
+.My projects heading span {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: blue;
+}
+
+.My projects heading h3,
+#contact h3 {
+    color: chartreuse;
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.sk h2 {
+    color: #011b1b;
+    margin: 0px, ;
+    font-weight: normal;
+}
+
+.main-intro h1 {
+    color: rgb(0, 195, 255);
+    font-size: 4rem;
+    line-height: 50px;
+    margin: 0px, 10px, 0px;
+}
+
+.main-intro p {
+    color: darkmagenta;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.MyPic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.MyPic {
+    width: 200px;
+    height: 200px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    top: 50%;
+    justify-content: space-around;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    background-color: #FFFFFF;
+    justify-content: space-evenly;
+    border-top: 2px solid green;
+    display: flex;
+}
+
+footer p {
+    margin: 20px 0px;
+    color: #5f5f5f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+nav {
+    display: flex;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: rgb(237, 243, 243);
+    align-items: center;
+    box-shadow: 6px 13px #f18080;
+    justify-content: space-around;
+    position: fixed;
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+    color: rgb(100, 0, 70);
+    box-shadow: 6px 13px 25px (64, 198, 192, 0.4);
+    transition: all ease 0.3s;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(94, 247, 239);
+}
+
+body {
+    background-color: light-blue;
+}
+
+h3 {
+    background-color: aqua;
+    color: whitesmoke;
+}
